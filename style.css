@@ -1,0 +1,100 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 50px;
+}
+
+.gamer-info{
+    /* text-align: center; */
+    /* border: 1px solid red; */
+    width: fit-content;
+    padding: 20px;
+    background-color: rgba(112, 112, 220, 0.529);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 590;
+}
+.gamer-info:hover{
+    background-color: rgba(240, 255, 255, 0.462);
+}
+.tic-tac-toe{
+    width: 350px;
+    background-color: rgba(112, 112, 220, 0.529);
+    border-radius: 20px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    aspect-ratio: 1/1; /* To make a SQUARISH GRID  */
+
+}
+.box{
+    position: relative;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+    
+    aspect-ratio: 1/1; /* To make a SQUARISH GRID  */
+
+    
+}
+.box1, .box2, .box4, .box5{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.box3, .box6{
+    border-bottom: 1px solid white;
+}
+.box7, .box8{
+    border-right: 1px solid white;
+}
+
+.bttn{
+    width: fit-content;
+    padding: 20px;
+    background-color: rgba(112, 112, 220, 0.529);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 590;
+
+    display: none;
+}
+.bttn.active{
+    display: block;
+}
+.bttn:hover{
+    background-color: rgba(240, 255, 255, 0.462);
+}
+
+.win{
+    background-color: rgba(28, 194, 28, 0.549);
+}
